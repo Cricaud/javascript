@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rangement</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+//Math floor permet une variable entière
+//Math random permet une variable random/aléatoire
+  const VAL = 10 ;//Math.floor(Math.random()*100);
+  var count = 0;
+
+console.log(VAL);
+
+  var found = false;
+    while(!found);{
+      count++;
+
+
+      var response = prompt("Veuillez entrer un entier entre 0 et 100.");
+
+      console.log(response);
+
+
+      if(response==null){
+
+        found=true;}
+      else if (response > VAL) {
+        alert("Vous êtes au dessus.");
+      }
+      else if (response < VAL) {
+        alert("Vous êtes en dessous.");
+      }
+      else if (response == VAL) {
+        alert("Vous avez trouvez "+count+" coups.");
+      }
+}
+
+    </script>
+
+  </body>
+</html>
