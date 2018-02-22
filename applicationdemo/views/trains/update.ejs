@@ -1,0 +1,12 @@
+<%-layout("layout.ejs")%>
+<h2>Edition du train n°<%=train_.id%></h2>
+<form action="/train/<%-train._id%>/update" method="POST">
+    <label>Code</label>
+    <input name="code" value="<%=train.code%>"/>
+    </br>
+    <label>Type</label>
+    <input name="type" value="<%=train.type%>"/>
+    </br>
+    <input type="submit"/>
+
+</form>

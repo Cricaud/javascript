@@ -1,0 +1,12 @@
+{
+  "name": "mon_application",
+  "version": "0.0.1",
+  "description": "une application de démo",
+  "license": "MIT",
+  "repository": "http://monrepo.com",
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "ejs-mate": "*"
+  }
+}

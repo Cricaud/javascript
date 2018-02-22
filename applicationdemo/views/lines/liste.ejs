@@ -1,0 +1,23 @@
+<%- layout("layout.ejs")%>
+<h2>Liste</h2>
+<a href="/lines/create"> Ajouter une ligne </a>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>CODE</th>
+        <th>TYPE</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%for(var i = 0 ; i<lignes.length ; i++) { %>
+    <tr>
+        <td><%=trains[i]._id%></td>
+        <td><%=trains[i].code%></td>
+        <td><%=trains[i].type%></td>
+        <td><a href="lines/<%=lines[i]._id%>/delete">Supprimer une Ligne</a></td>
+        <td><a href="lines/<%=lines[i]._id%>/update">Modifier une Ligne</a></td>
+    </tr>
+    <%}%>
+    </tbody>
+</table>

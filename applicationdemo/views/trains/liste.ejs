@@ -1,0 +1,23 @@
+<%- layout("layout.ejs")%>
+<h2>Liste</h2>
+<a href="/train/create"> Ajouter un train </a>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>CODE</th>
+        <th>TYPE</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%for(var i = 0 ; i<trains.length ; i++) { %>
+    <tr>
+        <td><%=trains[i]._id%></td>
+        <td><%=trains[i].code%></td>
+        <td><%=trains[i].type%></td>
+        <td><a href="train/<%=trains[i]._id%>/delete">Supprimer un train</a></td>
+        <td><a href="train/<%=trains[i]._id%>/update">Modifier un train</a></td>
+    </tr>
+    <%}%>
+    </tbody>
+</table>
